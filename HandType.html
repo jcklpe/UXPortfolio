@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  
+          <!-- Fonts -->
+         <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+          <!-- Fonts -->       
+         
+         <!-- jquery section -->
+         <script src="Jquery/jquery.min.js"></script>
+         <!-- jquery section -->
+        
+   <!-- Color Box -->
+        <link rel="stylesheet" href="CSS/colorbox.css">
+        <script src="Jquery/jquery.colorbox-min.js"></script>
+        
+        <script>
+            $(document).ready(function () {
+                $(".gallery").colorbox({rel: 'gal', arrowKey: true, transition:"none", maxWidth:"95%", maxHeight:"95%"});
+				
+            });
+        </script>
+   <!-- Color Box -->
+    
+          <!-- Main CSS -->
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" href="CSS/main.css">
+          <!-- Main CSS -->
+    
+  </head>
+
+<body>
+   <div class="nav">
+      <div class="container">
+        <ul class="pull-left">
+          <li><a href="UXDesign.html">UX Design</a></li>
+          <li><a href="GraphicDesign.html">Graphic Design</a></li>
+		  <li><a href="Illustration.html">Illustration</a></li>
+        </ul>
+        <ul class="pull-right">
+          <li><a href="About.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+
+  
+   <div class="neighborhood-guides">
+   <div class="row">
+         <div class="container">
+             <h1 align="middle">HandType Experiments</h1>
+   
+	  
+	  
+    </div>
+	<br>
+	<p class="col-md-8 col-md-offset-2">I'm a big fan of hand type. In a world of endless clean sterile san serif fonts there's something incredibly thrilling in the messy application of a brush to page. Here's a couple of my favorite experiments with the brush.<p>
+	</div>
+<br>
+</div>
+<br>
+<br>
+        
+<div class='row'>
+ <div class='col-md-12'>
+ <div class="grid clearcontainer">
+ <a class='gallery' href='images/GraphicDesign/HandType/1.jpg'><img src='images/GraphicDesign/HandType/1.jpg'></a>
+ <a class='gallery' href='images/GraphicDesign/HandType/2.jpg'><img src='images/GraphicDesign/HandType/2.jpg'></a>
+ <a class='gallery' href='images/GraphicDesign/HandType/3.jpg'><img src='images/GraphicDesign/HandType/3.jpg'></a>
+ <a class='gallery' href='images/GraphicDesign/HandType/4.jpg'><img src='images/GraphicDesign/HandType/4.jpg'></a>
+ <a class='gallery' href='images/GraphicDesign/HandType/5.jpg'><img src='images/GraphicDesign/HandType/5.jpg'></a>
+ </div>
+ </div>
+</div>
+
+ <!-- Gridify -->
+<script type="text/javascript" src="Jquery/gridify.js"></script>
+
+<script type="text/javascript">
+        $(window).load(function() {
+            var options =
+            {
+				
+                srcNode: 'img',             // grid items (class, node)
+                margin: '1px',             // margin in pixel, default: 0px
+                width: '500px',             // grid item width in pixel, default: 220px
+                max_width: '',              // dynamic gird item width if specified, (pixel)
+                resizable: true,            // re-layout if window resize
+                transition: 'all 0.2s ease' // support transition for CSS3, default: all 0.5s ease
+            }
+            $('.grid').gridify(options);
+        });
+</script>
+       <!-- Gridify -->	
+
+<script>
+    jQuery('a.gallery').colorbox();
+</script>	   
+		 
+		 
+  </body>
+</html>

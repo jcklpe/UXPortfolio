@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  
+          <!-- Fonts -->
+         <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+          <!-- Fonts -->       
+         
+         <!-- jquery section -->
+         <script src="Jquery/jquery.min.js"></script>
+         <!-- jquery section -->
+        
+   <!-- Color Box -->
+        <link rel="stylesheet" href="CSS/colorbox.css">
+        <script src="Jquery/jquery.colorbox-min.js"></script>
+        
+        <script>
+            $(document).ready(function () {
+                $(".gallery").colorbox({rel: 'gal', arrowKey: true, transition:"none", maxWidth:"95%", maxHeight:"95%"});
+            });
+			
+		
+        </script>
+   <!-- Color Box -->
+    
+          <!-- Main CSS -->
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" href="CSS/main.css">
+          <!-- Main CSS -->
+      
+      
+    
+  </head>
+
+ <body>
+   <div class="nav">
+      <div class="container">
+        <ul class="pull-left">
+          <li><a href="UXDesign.html">UX Design</a></li>
+          <li><a href="GraphicDesign.html">Graphic Design</a></li>
+		  <li><a href="Illustration.html">Illustration</a></li>
+        </ul>
+        <ul class="pull-right">
+          <li><a href="About.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+ 
+
+ 
+
+ <div class='row'>
+ <div class='col-md-12'>
+ <div class="grid clearcontainer">
+ <a class='gallery' href='images/GraphicDesign/1.jpg'><img src='images/GraphicDesign/1.jpg'></a>
+ <a class='gallery' href='images/GraphicDesign/2.jpg'><img src='images/GraphicDesign/2.jpg'></a>
+ <a class='gallery' href='images/GraphicDesign/3.jpg'><img src='images/GraphicDesign/3.jpg'></a>
+ <a class='gallery' href='images/GraphicDesign/4.jpg'><img src='images/GraphicDesign/4.jpg'></a>
+ <a class='gallery' href='images/GraphicDesign/5.gif'><img src='images/GraphicDesign/5.gif'></a>
+ <a class='gallery' href='images/GraphicDesign/6.jpg'><img src='images/GraphicDesign/6.jpg'></a>
+ <a class='gallery' href='images/GraphicDesign/7.jpg'><img src='images/GraphicDesign/7.jpg'></a>
+ <a class='gallery' href='images/GraphicDesign/8.jpg'><img src='images/GraphicDesign/8.jpg'></a>
+
+ <a class='gallery' href='images/GraphicDesign/10.jpg'><img src='images/GraphicDesign/10.jpg'></a>
+ <a class='gallery' href='images/GraphicDesign/11.jpg'><img src='images/GraphicDesign/11.jpg'></a>
+ <a class='gallery' href='images/GraphicDesign/12.jpg'><img src='images/GraphicDesign/12.jpg'></a>
+ <a class='gallery' title = "<a href= 'HandType.html'>CLICK HERE TO SEE HAND TYPE EXPERIMENTS</a>" href='images/GraphicDesign/13.jpg'><img src='images/GraphicDesign/13.jpg'></a>
+ <a class='gallery' href='images/GraphicDesign/14.jpg'><img src='images/GraphicDesign/14.jpg'></a>
+ <a class='gallery' href='images/GraphicDesign/15.gif'><img src='images/GraphicDesign/15.gif'></a>
+ <a class='gallery' href='images/GraphicDesign/16.jpg'><img src='images/GraphicDesign/16.jpg'></a>
+
+ <a class='gallery' href='images/GraphicDesign/18.png'><img src='images/GraphicDesign/18.png'></a>
+ <a class='gallery' href='images/GraphicDesign/19.jpg'><img src='images/GraphicDesign/19.jpg'></a>
+ <a class='gallery'title = "<a href= 'LadyJane.html'>CLICK HERE TO SEE MORE ABOUT LADY JANE BRANDING</a>" href='images/GraphicDesign/20.jpg'><img src='images/GraphicDesign/20.jpg'></a>
+ <a class='gallery' href='images/GraphicDesign/21.jpg'><img src='images/GraphicDesign/21.jpg'></a>
+
+ </div>
+ </div>
+</div>
+
+
+
+
+ <!-- Gridify -->
+<script type="text/javascript" src="Jquery/gridify.js"></script>
+
+<script type="text/javascript">
+        $(window).load(function() {
+            var options =
+            {
+				
+                srcNode: 'img',             // grid items (class, node)
+                margin: '1px',             // margin in pixel, default: 0px
+                width: '400px',             // grid item width in pixel, default: 220px
+                max_width: '',              // dynamic gird item width if specified, (pixel)
+                resizable: true,            // re-layout if window resize
+                transition: 'all 0.2s ease' // support transition for CSS3, default: all 0.5s ease
+            }
+            $('.grid').gridify(options);
+        });
+</script>
+       <!-- Gridify -->
+
+    
+     
+
+<script>
+    jQuery('a.gallery').colorbox();
+</script>
+
+
+  </body>
+</html>

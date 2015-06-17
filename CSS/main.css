@@ -1,0 +1,310 @@
+/* Custom nav stuff*/
+.customnav a {
+  color: black;
+ 
+
+  position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	outline: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.45em;
+	
+}
+
+.navcolor {
+	background: #E63120;
+}
+
+/* rollover nav effect*/
+.rollovernav a {
+	overflow: hidden;
+	padding: 0 3px;
+	height: 1.45em;
+}
+
+.rollovernav a span {
+	position: relative;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.rollovernav a span::before {
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	font-weight: 700;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.rollovernav a:hover span,
+.rollovernav a:focus span {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+/* custom nav stuff */
+
+.AboutP p {
+      margin: 10px;
+	  float: left;
+}
+
+.profile-picture {
+	 float: right;
+}
+
+.about-container {
+  background-color: #f7f7f7;
+  border: 0px;
+  border-radius: 10px;
+  padding: 10px 40px;
+}
+
+.about-container h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.about-container a {
+  color: #00b0ff;
+}
+
+.rightwardboy {
+    float: right;
+	margin: 10px;
+}
+
+.rightwardprofile {
+    float: right;
+}
+
+.centered-paragraph{
+    align: center;
+}
+
+
+
+/*Buttons*/
+.email-button {
+ margin: 4px;
+}
+
+.vimeo-button {
+ margin: 4px;
+}
+
+.flickr-button {
+ margin: 4px;
+}
+/*Buttons*/
+	  
+/*Hero image tilt*/ 
+
+
+.hero {
+	position: absolute;
+	top: 50px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	overflow: hidden;
+}
+
+.hero__imgwrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.hero__imgwrap::after {
+	content: '';
+	position: absolute;
+	background: rgba(76,0,1,0.1);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+.hero__img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: auto;
+	height: 100vh;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.hero__imgwrap .tilt__back,
+.hero__imgwrap .tilt__front {
+	background-size: auto 100vh;
+}
+
+@media screen and (min-aspect-ratio: 1440/960) {
+	.hero__imgwrap .tilt__back,
+	.hero__imgwrap .tilt__front,
+	.codrops-header {
+		background-size: 100vw auto;
+	}
+	.hero__img {
+		width: 100vw;
+		height: auto;
+	}
+}
+
+/* General button style (reset) */
+
+/* Button 2 */
+.btn-2 {
+    background: #ED3928 !important;
+	box-shadow: 0 6px #CC1616;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+
+/* Button 2a */
+.btn-2a {
+    background: #ED3928 !important;
+	border-radius: 0 0 5px 5px;
+
+}
+
+.btn-2a:hover {
+	background: #F74331 !important;
+	box-shadow: 0 4px #CC1616;
+	top: 2px;
+	
+}
+
+.btn-2a:active {
+	background: #FF4533 !important;
+	box-shadow: 0 0 #CC1616;
+	top: 6px;
+	
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+
+/* Hamburger Animation Stuff */
+
+.cmn-toggle-switch {
+  display: block;
+  position: relative;
+  float:right;
+  overflow: hidden;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+ 
+  border-radius: none;
+  border: none;
+
+  -webkit-transition: background 0.3s;
+          transition: background 0.3s;
+}
+
+.cmn-toggle-switch:focus {
+  outline: none;
+}
+
+.cmn-toggle-switch span {
+  display: block;
+  position: absolute;
+  top: 23px;
+  left: 9px;
+  right: 9px;
+  height: 4px;
+  background: white;
+}
+
+.cmn-toggle-switch span::before,
+.cmn-toggle-switch span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  content: "";
+}
+
+.cmn-toggle-switch span::before {
+  top: -14px;
+}
+
+.cmn-toggle-switch span::after {
+  bottom: -14px;
+}
+
+.cmn-toggle-switch__htx {
+  background-color: #ff3264;
+}
+
+.cmn-toggle-switch__htx span {
+  -webkit-transition: background 0s 0.3s;
+          transition: background 0s 0.3s;
+}
+
+.cmn-toggle-switch__htx span::before,
+.cmn-toggle-switch__htx span::after {
+  -webkit-transition-duration: 0.3s, 0.3s;
+          transition-duration: 0.3s, 0.3s;
+  -webkit-transition-delay: 0.3s, 0s;
+          transition-delay: 0.3s, 0s;
+}
+
+.cmn-toggle-switch__htx span::before {
+  -webkit-transition-property: top, -webkit-transform;
+          transition-property: top, transform;
+}
+
+.cmn-toggle-switch__htx span::after {
+  -webkit-transition-property: bottom, -webkit-transform;
+          transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+.cmn-toggle-switch__htx.active span {
+  background: none;
+}
+
+.cmn-toggle-switch__htx.active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.cmn-toggle-switch__htx.active span::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.cmn-toggle-switch__htx.active span::before,
+.cmn-toggle-switch__htx.active span::after {
+  -webkit-transition-delay: 0s, 0.3s;
+          transition-delay: 0s, 0.3s;
+}

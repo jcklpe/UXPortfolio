@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  
+          <!-- Fonts -->
+         <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+          <!-- Fonts -->       
+         
+         <!-- jquery section -->
+         <script src="Jquery/jquery.min.js"></script>
+         <!-- jquery section -->
+        
+   <!-- Color Box -->
+        <link rel="stylesheet" href="CSS/colorbox.css">
+        <script src="Jquery/jquery.colorbox-min.js"></script>
+        
+        <script>
+            $(document).ready(function () {
+                $(".gallery").colorbox({rel: 'gal', arrowKey: true, transition:"none", maxWidth:"95%", maxHeight:"95%"});
+				
+            });
+        </script>
+   <!-- Color Box -->
+    
+          <!-- Main CSS -->
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" href="CSS/main.css">
+          <!-- Main CSS -->
+    
+  </head>
+
+<body>
+   <div class="nav">
+      <div class="container">
+        <ul class="pull-left">
+          <li><a href="UXDesign.html">UX Design</a></li>
+          <li><a href="GraphicDesign.html">Graphic Design</a></li>
+		  <li><a href="Illustration.html">Illustration</a></li>
+        </ul>
+        <ul class="pull-right">
+          <li><a href="About.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+
+  
+   <div class="neighborhood-guides">
+   <div class="row">
+         <div class="container">
+             <h1 align="middle">LA Galaxy Fanzone App</h1>
+   
+	  
+	  
+    </div>
+	<br>
+	<p class="col-md-8 col-md-offset-2"> This is an app comp I did for the Los Angeles Galaxy soccer team. It's part of their geo-located marketing campaigns, in which beacons in the stadium interact with the app for targeted marketing promotions. Not only can fans watch the game from their seats but they can vote, play trivia, win prizes, and participate in other campaigns to make them more involved and integrated to the team experience. I also created the comp file in Photoshop with a heavy emphasis on Smart Objects, in order to cut future edits. This makes the file larger but also extremely easy to edit. Change one button, you change all instances of the button across all app screens.<p>
+	</div>
+<br>
+</div>
+<br>
+<br>
+        
+<div class='row'>
+ <div class='col-md-12'>
+ <div class="grid clearcontainer">
+ <a class='gallery' href='images/UXDesign/LAGalaxy/1.jpg'><img src='images/UXDesign/LAGalaxy/1.jpg'></a>
+ <a class='gallery' href='images/UXDesign/LAGalaxy/2.png'><img src='images/UXDesign/LAGalaxy/2.png'></a>
+ <a class='gallery' href='images/UXDesign/LAGalaxy/3.png'><img src='images/UXDesign/LAGalaxy/3.png'></a>
+ <a class='gallery' href='images/UXDesign/LAGalaxy/4.png'><img src='images/UXDesign/LAGalaxy/4.png'></a>
+ <a class='gallery' href='images/UXDesign/LAGalaxy/5.png'><img src='images/UXDesign/LAGalaxy/5.png'></a>
+ <a class='gallery' href='images/UXDesign/LAGalaxy/6.png'><img src='images/UXDesign/LAGalaxy/6.png'></a>
+ <a class='gallery' href='images/UXDesign/LAGalaxy/7.png'><img src='images/UXDesign/LAGalaxy/7.png'></a>
+ <a class='gallery' href='images/UXDesign/LAGalaxy/8.png'><img src='images/UXDesign/LAGalaxy/8.png'></a>
+ <a class='gallery' href='images/UXDesign/LAGalaxy/9.png'><img src='images/UXDesign/LAGalaxy/9.png'></a>
+ <a class='gallery' href='images/UXDesign/LAGalaxy/10.png'><img src='images/UXDesign/LAGalaxy/10.png'></a>
+ <a class='gallery' href='images/UXDesign/LAGalaxy/11.png'><img src='images/UXDesign/LAGalaxy/11.png'></a>
+ <a class='gallery' href='images/UXDesign/LAGalaxy/12.png'><img src='images/UXDesign/LAGalaxy/12.png'></a>
+ <a class='gallery' href='images/UXDesign/LAGalaxy/13.png'><img src='images/UXDesign/LAGalaxy/13.png'></a>
+ <a class='gallery' href='images/UXDesign/LAGalaxy/14.png'><img src='images/UXDesign/LAGalaxy/14.png'></a>
+ <a class='gallery' href='images/UXDesign/LAGalaxy/15.png'><img src='images/UXDesign/LAGalaxy/15.png'></a>
+
+ 
+ </div>
+ </div>
+</div>
+
+ <!-- Gridify -->
+<script type="text/javascript" src="Jquery/gridify.js"></script>
+
+<script type="text/javascript">
+        $(window).load(function() {
+            var options =
+            {
+				
+                srcNode: 'img',             // grid items (class, node)
+                margin: '1px',             // margin in pixel, default: 0px
+                width: '500px',             // grid item width in pixel, default: 220px
+                max_width: '',              // dynamic gird item width if specified, (pixel)
+                resizable: true,            // re-layout if window resize
+                transition: 'all 0.2s ease' // support transition for CSS3, default: all 0.5s ease
+            }
+            $('.grid').gridify(options);
+        });
+</script>
+       <!-- Gridify -->	
+
+<script>
+    jQuery('a.gallery').colorbox();
+</script>	   
+		 
+		 
+  </body>
+</html>
