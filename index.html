@@ -2,9 +2,10 @@
 <html>
 
   <head>
-	<!--Fonts, bootstrap, and main CSS-->
-    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
-   	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
+    <!-- Fonts -->
+	<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+  
+	<!--Bootstrap, and main CSS-->
 	<link rel="stylesheet" href="CSS/bootstrap.css">
     <link rel="stylesheet" href="CSS/main.css">
 	
@@ -15,61 +16,42 @@
 	<meta name="keywords" content="web design, UX, UX Design, art, illustration, game design"/>
 	<meta name="author" content="Jackalope Conspiracy" />
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	
+	<!--Fancy CSS stuff-->
 	<link rel="stylesheet" type="text/css" href="css/tilteffect.css" />
 	
-	<!-- for animating hamburger icon-->
-	<script src="js/modernizr.js"></script>
+
+	
 </head>
-  </head>
 
  <body>
- 
- <header>
-	<div class="navbar navbar-default navcolor rollovernav customnav">
-		
-		<div class="navbar-header customnav rollovernav">
-		<button type="button" class="navbar-toggle btn-2 btn-2a cmn-toggle-switch cmn-toggle-switch__htx" data-toggle="collapse" data-target="#hamburgerfillins">
-            <span>toggle menu</span>
-          </button> 
-				
-	
-		</div>
-		
-			<div class="collapse navbar-collapse customnav rollovernav" id="hamburgerfillins">
-					
-					<div class="nav navbar-nav navbar-left customnav">
-						<a href="UXDesign.html"><span data-hover="UX Design">UX Design&nbsp;    </span></a>
-						<a href="GraphicDesign.html"><span data-hover="Graphic Design">Graphic Design &nbsp;</span></a>
-					    <a href="Illustration.html"><span data-hover="Illustration">Illustration</span></a>
-					    <a href="Motion.html"><span data-hover="Motion">Motion &nbsp;</span></a>
-					</div>
-						
-					<div class="nav navbar-nav navbar-right customnav">
-						<a href="About.html"><span data-hover="About">About</span></a>
-					</div>
-			</div>
-        
-		
-	</div>
-</header>
 
-<!--Hero image with tilt effect-->
 
+<!--Hero image and Title-->
 <div class="hero">
-		<div class="hero__imgwrap">
-			<img class="hero__img tilt-effect" data-tilt-options='{ "opacity" : 0.3, "extraImgs" : 3, "movement": { "perspective" : 1700, "translateX" : -7, "translateY" : -7, "rotateX" : -7, "rotateY" : -7 } }' src="images/welcome.jpg" alt="Welcome!" />
-		</div>
+    <!--Background image-->
+	<div class="hero__imgwrap">
+			<img src="images/welcome.jpg" class="hero__img tilt-effect" data-tilt-options='{ "opacity" : 0.3, "extraImgs" : 0, "movement": { "perspective" : 1700, "translateX" : -7, "translateY" : -7, "rotateX" : -7, "rotateY" : -7 } }' alt="Welcome!" />
+	</div>
+
+	
+	
+	
+		<div class="grid__item">
+				<a class="link link--mallki " href="About.html">David French<span data-letters="UX Designer"></span><span data-letters="UX Designer"></span>	
+				</a>
+				<br>
+				
+			</div>
+		
+		
 </div>
-<!--Hero image with tilt effect-->
 				
 <!-- Scripts -->
-<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="js/tiltfx.js"></script>
-		
-		<script src="js/demo.js"></script>
-		
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script> <!--for hamburger toggle bootstrap menu-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> <!--for hamburger toggle bootstrap menu-->
+<script src="js/tiltfx.js"></script> <!--Handles background image tilt fx-->
+<script src="js/hamburger.js"></script> <!-- Handles Hamburger Animation-->
 <!-- Scripts -->
 
 </body>

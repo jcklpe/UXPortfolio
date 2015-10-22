@@ -218,7 +218,7 @@
 		});
 
 		// reset all when mouse leaves the main wrapper.
-		this.tiltWrapper.addEventListener('mouseleave', function(ev) {
+		/*this.tiltWrapper.addEventListener('mouseleave', function(ev) {
 			setTimeout(function() {
 			for(var i = 0, len = self.imgElems.length; i < len; ++i) {
 				var el = self.imgElems[i];
@@ -227,7 +227,7 @@
 			}	
 			}, 60);
 			
-		});
+		});*/
 
 		// window resize
 		window.addEventListener('resize', throttle(function(ev) {
