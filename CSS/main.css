@@ -128,7 +128,6 @@ margin-right:0!important;
 /* ABOUT PARAGRAPH SECTION*/
 
 
-
 .text-paragraph-card {
   background-color: white !important;
   border: 0px;
@@ -139,17 +138,29 @@ margin-right:0!important;
   padding-top: 10px !important;
   text-decoration: none !important;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); 
-  margin-bottom: 15px;
+  
+}
+
+.text-paragraph-card h1{
+	font-family: AllerBold !important;
+   font-weight: normal !important;
+}
+
+.text-paragraph-card h2{
+	font-family: Aller !important;
+   font-weight: normal !important;
 }
 
 .text-paragraph-card p{
-      margin: 10px;
+      
 	  float: left;
 	  font-size: 22px !important;
 	  line-height: 1.5em;
 	  font-family: AllerLight, san-serif;
 	  margin-bottom: 33px;
 }
+
+
 
 
 section {
@@ -227,20 +238,14 @@ section a::after {
 .give-breathing-room-15 {
 	margin: 15px 15px 15px 15px !important;
 }
-/*
-.flex-container {
-  display: flex;
-  flex-flow: row wrap;
-  /* This aligns items to the end line on main-axis 
-  justify-content: flex-end;
-}*/
 
 .flex-container {
- 
   display: flex;
-  
-  -webkit-flex-flow: row wrap;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  border: 5px solid blue;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 5vh auto 5vh auto;
 }
 .flex-container a {
   text-decoration: none;
@@ -253,6 +258,22 @@ section a::after {
   .flex-container {
     justify-content: space-around;
   }
+}
+
+.flex-item {
+	flex: 1;
+}
+
+.flex-info {
+	flex: 0 1 500px;
+}
+
+.flex-profile: {
+flex: 0 1 500px;
+}
+
+.flex-title {
+	flex: 0 1 1090px;
 }
 	  
 /*Hero image tilt*/ 
