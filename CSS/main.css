@@ -186,6 +186,12 @@ margin-right:0!important;
 	  align-items: center;
 }
 
+.text-paragraph-card a{
+padding: 0em !important;
+
+
+}
+
 .text-paragraph-card li {
 
 	  font-size: 18px !important;
