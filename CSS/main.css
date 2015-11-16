@@ -134,11 +134,36 @@ margin-right:0!important;
   border-radius: 4px;
   padding-right: 10px!important;
   padding-left:10px!important;
-  padding-bottom: 15px !important;
+  padding-bottom: 10px !important;
   padding-top: 10px !important;
   text-decoration: none !important;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); 
   
+}
+
+
+
+.text-circle-card {
+  background-color: #00b0ff !important;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 8em;
+  height: 8em;
+  font-size: 1.5em;
+  border: 0px;
+  border-radius: 50%;
+  text-decoration: none !important;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); 
+  text-align: center;
+  align-self: center;
+  
+}
+
+.text-circle-card h3{
+  font-family: Aller;
+
 }
 
 .text-paragraph-card h1{
@@ -157,7 +182,21 @@ margin-right:0!important;
 	  font-size: 22px !important;
 	  line-height: 1.5em;
 	  font-family: AllerLight, san-serif;
-	  margin-bottom: 33px;
+	  margin-bottom: 10px;
+	  align-items: center;
+}
+
+.text-paragraph-card li {
+
+	  font-size: 18px !important;
+	  line-height: 1.5em;
+	  font-family: AllerLight, san-serif;
+	  align-items: center;
+}
+
+.exp-info {
+	display: flex;
+	align-items: center;
 }
 
 
@@ -197,7 +236,7 @@ section a::after {
 }
 
 .link-slideup a {
-	overflow: hidden;
+	overflow: hidden !important;
 	font-weight: 500;
 	color: #00b0ff;
 	text-decoration: none;
@@ -242,26 +281,20 @@ section a::after {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  border: 5px solid blue;
+  /*border: 5px solid blue;*/
   justify-content: center;
   max-width: 1200px;
-  margin: 5vh auto 5vh auto;
+  margin: 0px auto 0px auto;
 }
 .flex-container a {
   text-decoration: none;
   display: block;
   padding: 1em;
-  color: white;
-}
-
-@media all and (max-width: 1000px) {
-  .flex-container {
-    justify-content: space-around;
-  }
+ 
 }
 
 .flex-item {
-	flex: 1;
+	flex: 1 0 300px;
 }
 
 .flex-info {
@@ -274,6 +307,7 @@ flex: 0 1 500px;
 
 .flex-title {
 	flex: 0 1 1090px;
+
 }
 	  
 /*Hero image tilt*/ 
