@@ -1,0 +1,235 @@
+html, body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-image:url(https://s3.amazonaws.com/codecademy-content/projects/pocketbook/bg.jpg);
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-color: #140e07; 
+            color:#fff;
+        }
+
+        .container {
+            max-width: 940px;
+        }
+
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header .container {
+            padding: 30px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        /* Main */
+        .main {
+            margin: 80px 0;
+
+        }
+
+        .main h1 {
+            font-size: 30px;
+            margin: 0 0 20px 0;
+        }
+
+        .main .btn { 
+            margin-top:30px; 
+            color:#fff;
+            background:rgba(0,240,190,0.25);
+            border:0px;
+            border-radius:0px; 
+        }
+
+        /* Footer */
+        .footer .container {
+            padding: 20px 0;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0 20px;
+            margin-bottom: 80px;
+        }
+
+        .footer li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+
+    
+    /*Forms*/
+
+
+.input {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin: 1em;
+    max-width: 350px;
+    width: calc(100% - 2em);
+    vertical-align: top;
+}
+
+.input__field {
+    position: relative;
+    display: block;
+    float: right;
+    padding: 0.8em;
+    width: 60%;
+    border: none;
+    border-radius: 0;
+    background: #f0f0f0;
+    color: #aaa;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.input__field:focus {
+    outline: none;
+}
+
+.input__label {
+    display: inline-block;
+    float: right;
+    padding: 0 1em;
+    width: 40%;
+    color: #6a7989;
+    font-weight: bold;
+    font-size: 70.25%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.input__label-content {
+    position: relative;
+    display: block;
+    padding: 1.6em 0;
+    width: 100%;
+}
+
+
+
+/* dolla */
+.input--dolla {
+    overflow: hidden;
+}
+
+.input__field--dolla {
+    margin-top: 1em;
+    padding: 0.85em 0.15em;
+    width: 100%;
+    background: transparent;
+    color: #595F6E;
+}
+
+.input__label--dolla {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 0.25em;
+    width: 100%;
+    height: calc(100% - 1em);
+    text-align: left;
+    pointer-events: none;
+}
+
+.input__label-content--dolla {
+    position: absolute;
+}
+
+.input__label--dolla::before,
+.input__label--dolla::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 10px);
+    border-bottom: 1px solid #B9C1CA;
+}
+
+.input__label--dolla::after {
+    margin-top: 2px;
+    border-bottom: 4px solid red;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+
+.input__label--dolla-color-1::after {
+    border-color: hsl(167, 100%, 30%);
+}
+
+.input__label--dolla-color-2::after {
+    border-color: hsl(131, 100%, 35%);
+}
+
+.input__label--dolla-color-3::after {
+    border-color: hsl(101, 100%, 40%);
+}
+
+.input__field--dolla:focus + .input__label--dolla::after,
+.input--filled .input__label--dolla::after {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.input__field--dolla:focus + .input__label--dolla .input__label-content--dolla,
+.input--filled .input__label-content--dolla {
+    -webkit-animation: anim-1 0.3s forwards;
+    animation: anim-1 0.3s forwards;
+}
+
+@-webkit-keyframes anim-1 {
+    50% {
+        opacity: 0;
+        -webkit-transform: translate3d(1em, 0, 0);
+        transform: translate3d(1em, 0, 0);
+    }
+    51% {
+        opacity: 0;
+        -webkit-transform: translate3d(-1em, -40%, 0);
+        transform: translate3d(-1em, -40%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, -40%, 0);
+        transform: translate3d(0, -40%, 0);
+    }
+}
+
+@keyframes anim-1 {
+    50% {
+        opacity: 0;
+        -webkit-transform: translate3d(1em, 0, 0);
+        transform: translate3d(1em, 0, 0);
+    }
+    51% {
+        opacity: 0;
+        -webkit-transform: translate3d(-1em, -40%, 0);
+        transform: translate3d(-1em, -40%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, -40%, 0);
+        transform: translate3d(0, -40%, 0);
+    }
+}

@@ -1,31 +1,43 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
   <head>
-    <!--Bootstrap, and main CSS-->
+<!-- Meta Tags and SEO-->
+	<meta charset="UTF-8">
+	<title>David A. French: UX Designer</title>
+	<meta name="description" content="UX designer living in Austin, Texas">
+	<meta name="keywords" content="ux design, designer, interaction, game dev, web development, front-end, css3, edtech, responsive design, logo design">
+	<meta name="author" content="David Aslan French">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<!--Bootstrap, and main CSS-->
 	<link rel="stylesheet" href="CSS/bootstrap.css">
     <link rel="stylesheet" href="CSS/main.css">
+
+<!-- Mobile Theme Color and Icon -->
+    <meta name="theme-color" content="#E63120">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#E63120">
+    <meta name="msapplication-navbutton-color" content="#E63120">
+    <link rel="shortcut icon" href="favicon.ico">
+
+<!-- Social Graph Tags -->
+	<meta property="og:title" content="UX Design ATX">
+	<meta property="og:site_name" content="Jackalope Conspiracy">
+	<meta property="og:image" content="/images/socialLogo.jpg">
+	<meta property="og:url" content="http://jack-a-lope.net"/>
+	<meta property="og:type" content="website"/>
 	
-	<!-- meta page stuff-->
-	<title>About me</title>
-	<!-- Mobile Theme Color -->
-    <meta name="theme-color" content="#E63120"> <meta name="apple-mobile-web-app-status-bar-style" content="#E63120"> <meta name="msapplication-navbutton-color" content="#E63120">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="UX Design Portfolio of David A. French"/>
-	<meta name="keywords" content="web design, UX, UX Design, art, illustration, game design"/>
-	<meta name="author" content="Jackalope Conspiracy" />
-	<link rel="shortcut icon" href="favicon.ico">
-	
-	
-	
-	
-	
+<!-- Javascript Preload-->
+		<script src="js/modernizr.custom.70736.js"></script>
   </head>
 
- <body style="background-color:#f7f7f7">
-  <header>
+<body style="background-color:#f7f7f7">
+
+	
+
+
     <!--Navbar-->
-	<div class="navbar navbar-default navcolor rollovernav customnav topdawg purgeborder">
+	<nav class="navbar navbar-default navcolor rollovernav customnav topdawg purgeborder">
 	
 	    <!--Navbar Toggle Button-->
 		<div class="navbar-header topdawg purgeborder">
@@ -45,30 +57,81 @@
 						<a href="index.html"><span data-hover="About">About</span></a>
 					</div>
 		</div>
-	</div>	
- </header>
+	</nav>	
+
+
+    <picture class="hero">
+        <source class="hero" media="(min-width: 1000px)"
+                srcset="images/largeme.jpg">
+        <source class="hero" media="(max-width: 465px)"
+                srcset="images/smallme.jpg">
+        <img class="hero" src="images/medme.jpg" alt="hero profile">
+    </picture>
+
+<div class="header-card">
+	<h1>David Aslan French </h1>
+		<h2> UX and Interaction Designer </h2>
+			<section class="link-slideup">
+				<a href="mailto:david.aslan.french@gmail.com">david.aslan.french@gmail.com</a>
+			</section> 
+</div>
 
  <!--About Paragraph-->
+
+
+
 <div class="flex-container">
    <div class="text-paragraph-card flex-item flex-info give-breathing-room-15"> 
-        <h1>David A. French</h1>
-		<h2>UX Designer</h2>
-		<section class="link-slideup">
-		<p><a href="mailto:david.aslan.french@gmail.com">david.aslan.french@gmail.com &nbsp; &nbsp;</a>
-		</section> </p>
-		<p>Hey, my name is David. I'm a designer with a robust toolset of skills in UX, design, and code. I am always refining my craft, and enjoy striving for creative
+
+		<p> <a name="howdy"></a> Hey, my name is David. I'm a designer with a robust tool-set of skills in UX, design, and code. I am always refining my craft, and enjoy striving for creative
 and innovative solutions to whatever puzzle is thrown my way. I'm passionate about the untapped future of
 interactive design and the UX field. From mobile apps to Virtual Reality, from civic good to play studies, the future is interactive!
  I'm a founding member of the Austin Virtual Reality club, a frequent hackathon participant, and the kind of guy who rambles on about the button layouts of microwaves at parties. I'm always looking for a new challenge, if you have a problem that needs solving, give me a shout. </p>
 	</div>
 
-    <div class="text-paragraph-card flex-profile give-breathing-room-15"> 
-		<img src="images/me.jpg" alt="profile picture of UX Designer David A. French" class="img-responsive give-breathing-room-15 ">
-	</div>
 
-	<div class="text-paragraph-card flex-item flex-title"> 
+	<div class="text-paragraph-card flex-item flex-title" > 
+	<a name="experience"></a>
 		<h2>Experience</h2>
 	</div>
+
+    <div class="flex-container flex-title ">
+        <div class="text-circle-card give-breathing-room-15">
+            <h3>UX Designer/ Developer</h3>
+        </div>
+
+        <div class="text-paragraph-card flex-item give-breathing-room-15">
+            <section class="link-slideup">
+                <p><a href="#">TBA VR company</a></p>
+            </section>
+
+            <ul>
+                <li>Lead UX designer helping define brand strategy, visual design and UX for productivity app built with Unity and WebGL.</li>
+            </ul>
+        </div>
+        <div class="exp-info text-paragraph-card give-breathing-room-15">
+            <p>January 2016-Now</p>
+        </div>
+    </div>
+
+    <div class="flex-container flex-title ">
+        <div class="text-circle-card give-breathing-room-15">
+            <h3>UX Designer/ Developer</h3>
+        </div>
+
+        <div class="text-paragraph-card flex-item give-breathing-room-15">
+            <section class="link-slideup">
+                <p><a href="http://mathys-potestio.com/">Mathys+Potestio</a></p>
+            </section>
+
+            <ul>
+                <li>Freelance UX design and development, with a focus on branded app experience.</li>
+            </ul>
+        </div>
+        <div class="exp-info text-paragraph-card give-breathing-room-15">
+            <p>January 2016-Now</p>
+        </div>
+    </div>
 
 	<div class="flex-container flex-title ">
 		<div class="text-circle-card give-breathing-room-15">
@@ -85,7 +148,7 @@ interactive design and the UX field. From mobile apps to Virtual Reality, from c
 			</ul>
 		</div>
 		<div class="exp-info text-paragraph-card give-breathing-room-15">
-			<p>May 2015-Now</p> 
+			<p>May 2015-December 2015</p> 
 		</div>
 	</div>
 
@@ -200,6 +263,7 @@ interactive design and the UX field. From mobile apps to Virtual Reality, from c
 		</div>
 
 <div class="text-paragraph-card flex-item flex-title"> 
+<a name="skills"></a>
 		<h2>Skills</h2>
 </div>
 
@@ -214,13 +278,14 @@ interactive design and the UX field. From mobile apps to Virtual Reality, from c
 
 <div class="flex-container flex-title ">	
 		<div class="text-paragraph-card flex-item give-breathing-room-15">
-			<h3>Hard Skills:</h3>
+			<h3>Technical Skills:</h3>
 		
-			<p>&nbsp; &nbsp; &nbsp; &nbsp; HTML5, CSS3, Sketch, Marvel App, Axure, Balsamiq, Bootstrap, Photoshop, Illustrator, After Effects, Premiere, JIRA, Javascript, Unity3D, C#, and Jquery</p> 
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; HTML5, CSS3, Sketch, Marvel App, Axure, Balsamiq, Bootstrap, Sublime Text, Visual Studio, Photoshop, Illustrator, After Effects, Premiere, JIRA, Git, Javascript, Unity3D, C#, and Jquery</p> 
 		</div>
 </div>
 
 <div class="text-paragraph-card flex-item flex-title"> 
+<a name="#education"></a>
 		<h2>Education</h2>
 </div>
 
@@ -261,6 +326,7 @@ interactive design and the UX field. From mobile apps to Virtual Reality, from c
 
 		<!-- Contact Buttons-->
 		<div class="text-paragraph-card give-breathing-room-15">
+<a name="contact"></a>
 			<div class="flex-container give-breathing-room-15">
 		      	<a href="mailto:david.aslan.french@gmail.com" id="btn-click"><button class="flex-item btn btn-7 btn-7a icon-envelope align-right" id="btn-click">Email me</button> </a>
 				
@@ -269,6 +335,22 @@ interactive design and the UX field. From mobile apps to Virtual Reality, from c
 		</div> <!-- contact buttons-->
 </div>	
 <!--About Paragraph-->
+
+
+
+
+
+
+
+
+
+
+<!-- Scripts -->	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
 		
 <!-- Scripts -->
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script> <!--for hamburger toggle bootstrap menu-->
@@ -314,6 +396,12 @@ interactive design and the UX field. From mobile apps to Virtual Reality, from c
 		     
    
 		 
+
+
+
+
+
+
 		 
   </body>
 </html>

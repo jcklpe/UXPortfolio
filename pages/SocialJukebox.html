@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+<!-- Meta Tags and SEO-->
+	<meta charset="UTF-8">
+	<title>Social Jukebox App</title>
+	<meta name="description" content="Social dj jukebox application">
+	<meta name="keywords" content="ux design, designer, interaction, android development, social media, AR, agumented reality, logo design">
+	<meta name="author" content="David Aslan French">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<!--Bootstrap, and main CSS-->
+	<link rel="stylesheet" href="../CSS/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+
+<!-- Mobile Theme Color and Icon -->
+    <meta name="theme-color" content="#E63120">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#E63120">
+    <meta name="msapplication-navbutton-color" content="#E63120">
+    <link rel="shortcut icon" href="../favicon.ico">
+
+<!-- Social Graph Tags -->
+	<meta property="og:title" content="Social Jukebox Experience">
+	<meta property="og:site_name" content="Jackalope Conspiracy">
+	<meta property="og:image" content="../images/socialLogo.jpg">
+	<meta property="og:url" content="http://jack-a-lope.net/pages/SocialJukebox.html"/>
+	<meta property="og:type" content="website"/>
+
+<!-- Javascript Preload-->
+		<script src="../js/modernizr.custom.70736.js"></script>
+  </head>
+
+	<body style="background-color:#f7f7f7">
+
+	<header>
+    <!--Navbar-->
+	<div class="navbar navbar-default navcolor rollovernav customnav topdawg purgeborder">
+	
+	    <!--Navbar Toggle Button-->
+		<div class="navbar-header topdawg purgeborder">
+			<button type="button" class="navbar-toggle btn-2 btn-2a hamburger-toggle-switch hamburger-toggle-switch__htx topdawg purgeborder" data-toggle="collapse" data-target="#hamburgerfillins">
+            <span>toggle menu</span>
+            </button>
+		</div>
+		
+		<!--Navbar Links-->
+		<div class="collapse navbar-collapse customnav rollovernav topdawg purgeborder" id="hamburgerfillins">
+					
+					<div class="nav navbar-nav navbar-left customnav topdawg purgeborder">
+						<a href="Portfolio.html"><span data-hover="Portfolio">Portfolio&nbsp;    </span></a>
+						
+					</div>
+						
+					<div class="nav navbar-nav navbar-right customnav topdawg">
+						<a href="../index.html"><span data-hover="About">About</span></a>
+					</div>
+		</div>
+	</div>
+ </header>
+<div class="container">
+	<h1 align="middle">Social Jukebox App</h1>
+</div>
+		<br>
+	
+        <section class="section-div link-slideup">
+
+            <div class="content">
+                <img class="section-image" src="../images/SocialJukebox/peopleinacafe.jpg" />
+
+                <p>
+                    Social Jukebox provides a collaborative social music listening experience in public spaces. I was tapped for the UX by <a href="http://us.moodmedia.com/">Mood Media</a>, a local Austin internet radio company. The first issue I tackled was how to address voting in dynamic social situations where users were not recognized computationally, meaning that voting norms could not be enforced through usernames or individual IDs. Drawing from my personal interests in alternative voting methods, I decided to go with system based off <a href="https://electology.org/approval-voting">Approval Voting</a>, which balances simplicity and expressiveness in voting schema. The simplicity of the system also largely solves the double-spending vote problem as it enables clear social enforcement, and flexibility for differing group sizes or norms.
+				<br />
+				<br />
+                    The single most important part of my process is quick, lo-fi iteration. Design is a process which is mediated not  through just abstract thought, but through embodied experience. In my opinion, good design can not be derived through speculation but must be worked through by hand. I have found that even if a problem seems fairly simple on the face of it, and I could feel confident mocking it up in code, it is much better to draw out my process, and force myself to create a number of variations first.  Above you can see  the evolution of my thinking as I explored the initial idea of creating a social jukebox app.
+                </p>
+            </div>
+        </section>
+	
+	    
+<br>
+	
+        <section class="section-div2 link-slideup">
+
+            <div class="content">
+                <a href="#img1"> 
+    	<img src="../images/SocialJukebox/wireframe_1.jpg"/>
+    </a>
+    <a href="#_" class="lightbox" id="img1">
+    	<img src="../images/SocialJukebox/wireframe_1.jpg"/>
+    </a>
+
+                <p class="link-text link-slideup">
+                 In <a href="#img1">figure [1]</a> I started with a fairly bog standard music player application style that met the specifications of the client. Upon further thought process though I realized that the essential verb for this app was not playing or pausing the music (the user would not be able to as it was a continuous stream like a jukebox) nor would the user be fiddling with the volume (since the only intended implementation of this project was in a kiosk setting in places of business such as restaurants and therefore would have a set of unified hardware with easily accessible physical volume controls). 
+                </p>
+            </div>
+        </section>
+	
+        <section class="section-div  link-slideup">
+            <div class="content">
+            <a href="#img2">
+                <img src="../images/SocialJukebox/wireframe_23.jpg" />
+            </a>
+            <a href="#_" class="lightbox" id="img2">
+                <img src="../images/SocialJukebox/wireframe_23.jpg" />
+            </a>
+
+            
+            <p class="link-text link-slideup">
+                Instead the main point of interaction for the users would be the voting system, and the "Now Playing" would really only serve to give information about the current song and have little interaction otherwise. In <a href="#figure2">figure [2]</a> I emphasized this through my use of a central voting button and the increased real estate for the browsing selection. This is also meant to be a social experience so the inability to having multiple people voting on different songs posed a problem. The last thing you would want is people scrabbling over each other as they all tried to poke the tablet at the same time. This led to <a href="#figure3">figure [3]</a> in which I expanded out the number of available songs that are viewable and available for voting.
+			
+                
+            </p>
+			
+			</div>
+                
+            </div>
+        </section>
+	
+        <section class="section-div2 link-slideup">
+
+            <div class="content">
+                <a href="#img3">
+                    <img src="../images/SocialJukebox/wireframe_45.jpg" />
+                </a>
+                <a href="#_" class="lightbox" id="img3">
+                    <img src="../images/SocialJukebox/wireframe_45.jpg" />
+                </a>
+			
+                <p class="link-text link-slideup">
+                    In <a href="#figure4">figure [4]</a>  I decided to try flipping the orientation to more resemble the jukebox inspiration. It creates a more clean and compact representation for the "Now Playing" and "Up Next" queue sections but also limits the amount of the horizontal scrolling space that users have available. Horizontal scrolling is a necessity in this case since the users would be reading song and artist names and therefore having a scrolling motion which was consistent with their orientation of reading direction was necessary. To create more visible horizontal scrolling space I sketched out <a href="#figure5">figure [5]</a> which derived more of it's inspiration directly from the actual skeuomorphic presentation of a real jukebox. The use of pagination is nice in a way, it allows for more discreet chunking of the users browsing selection but I felt that ultimately the better thing to do was to allow for the free flowing smooth scrolling of before, so as to encourage more easy spinning of the wheel, conversation, and quick scrolls back and forth between friends discussing the music they want to hear next. One idea that I got from this design though was that I could increase the number of visible selections by doubling up the layers of horizontal space rather than relying solely on a long horizontal scrolling view.
+				
+				
+                    
+                </p>
+            </div>
+        </section>
+	
+        <section class="section-div link-slideup">
+            <div class="content">
+                <a href="#img4">
+                    <img src="../images/SocialJukebox/wireframe_67.jpg" />
+                </a>
+                <a href="#_" class="lightbox" id="img2">
+                    <img src="../images/SocialJukebox/wireframe_67.jpg" />
+                </a>
+
+
+                <p class="link-text link-slideup">
+                    In <a href="#figure6 link-slideup">figure [6]</a> I returned to the horizontal view, but now with the multiple levels of horizontal scrolling space. I chose a slightly skeuomorphic perspective wheel to help emphasize the central albums in view, so that the main interaction space would be clear to users while also allowing them to see additional available songs they could vote on. This helps create focus in user action without reducing the amount of useful information they can browse. A design such as this though begins to reduce it's visibility near the edges and left a lot of unused space in the corners so in <a href="#figure7">figure [7]</a>I decided to return to a flatter album view similar to ones used in previous designs. This  design is close to the final design I ended up mocking up (as seen <a href="#img6">here</a>), aside from a return to the use of portrait orientation. I think that this process helps illustrate why an embodied and iterative design process is necessary. I only saw these issues by marking them out on pen and paper, seeing them not just in my mind but before me. Design is fundamentally about solving problems, and to solve them well it can not rely on assumptions and solutions created for different problems, and the roots of the problem must be worked through individually in order to establish the best solution.
+                </p>
+
+            </div>
+
+            </div>
+        </section>
+	
+        <a href="#_" class="lightbox" id="figure2">
+            <img src="../images/SocialJukebox/figure2.jpg" />
+        </a>
+	
+        <a href="#_" class="lightbox" id="figure3">
+            <img src="../images/SocialJukebox/figure3.jpg" />
+        </a>
+	
+        <a href="#_" class="lightbox" id="figure4">
+            <img src="../images/SocialJukebox/figure4.jpg" />
+        </a>
+	
+        <a href="#_" class="lightbox" id="figure5">
+            <img src="../images/SocialJukebox/figure5.jpg" />
+        </a>
+	
+        <a href="#_" class="lightbox" id="figure6">
+            <img src="../images/SocialJukebox/figure6.jpg" />
+        </a>
+	
+        <a href="#_" class="lightbox" id="figure7">
+            <img src="../images/SocialJukebox/figure7.jpg" />
+        </a>
+
+	
+<br>
+
+<section class="section-div-gallery">  
+    	<a href="#img5">
+    		<img src="../images/SocialJukebox/jukemock.jpg"/>
+    	</a>
+    	<a href="#_" class="lightbox" id="img5">
+  			<img src="../images/SocialJukebox/jukemock.jpg"/>
+		</a>
+
+		<a href="#img6">
+    		<img src="../images/SocialJukebox/jukebox.jpg"/>
+    	</a>
+    	<a href="#_" class="lightbox" id="img6">
+  			<img src="../images/SocialJukebox/jukebox.jpg"/>
+		</a>
+
+		<a href="#img7">
+    		<img src="../images/SocialJukebox/jukemockactive.jpg"/>
+    	</a>
+    	<a href="#_" class="lightbox" id="img7">
+  			<img src="../images/SocialJukebox/jukemockactive.jpg"/>
+		</a>
+
+
+    	
+</section>
+	
+        
+<!-- Scripts -->
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script> <!--for hamburger toggle bootstrap menu-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> <!--for hamburger toggle bootstrap menu-->
+
+<script src="../js/hamburger.js"></script> <!-- Handles Hamburger Animation-->
+<!-- Scripts -->	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="../js/jquery.masonry.min.js"></script>
+		<script src="../js/jquery.history.js"></script>
+		<script src="../js/js-url.min.js"></script>
+		<script src="../js/jquerypp.custom.js"></script>
+		<script src="../js/gamma.js"></script>
+		<script type="text/javascript">
+			
+			$(function() {
+
+				var GammaSettings = {
+						// order is important!
+						viewport : [ {
+							width : 1200,
+							columns : 3
+						}, {
+							width : 900,
+							columns : 3
+						}, {
+							width : 500,
+							columns : 2
+						}, { 
+							width : 320,
+							columns : 2
+						}, { 
+							width : 0,
+							columns : 1
+						} ]
+				};
+
+				Gamma.init( GammaSettings, fncallback );
+
+
+				// Example how to add more items (just a dummy):
+
+				var page = 0,
+					items = ['<li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/Illustration/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/Illustration/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/Illustration/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/Illustration/large/3.jpg" data-min-width="300"></div><div data-src="images/Illustration/medium/3.jpg" data-min-width="200"></div><div data-src="images/Illustration/small/3.jpg" data-min-width="140"></div><div data-src="images/Illustration/xsmall/3.jpg"></div><noscript><img src="images/Illustration/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/Illustration/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/Illustration/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/Illustration/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/Illustration/large/3.jpg" data-min-width="300"></div><div data-src="images/Illustration/medium/3.jpg" data-min-width="200"></div><div data-src="images/Illustration/small/3.jpg" data-min-width="140"></div><div data-src="images/Illustration/xsmall/3.jpg"></div><noscript><img src="images/Illustration/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/Illustration/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/Illustration/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/Illustration/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/Illustration/large/3.jpg" data-min-width="300"></div><div data-src="images/Illustration/medium/3.jpg" data-min-width="200"></div><div data-src="images/Illustration/small/3.jpg" data-min-width="140"></div><div data-src="images/Illustration/xsmall/3.jpg"></div><noscript><img src="images/Illustration/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/Illustration/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/Illustration/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/Illustration/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/Illustration/large/3.jpg" data-min-width="300"></div><div data-src="images/Illustration/medium/3.jpg" data-min-width="200"></div><div data-src="images/Illustration/small/3.jpg" data-min-width="140"></div><div data-src="images/Illustration/xsmall/3.jpg"></div><noscript><img src="images/Illustration/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/Illustration/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/Illustration/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/Illustration/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/Illustration/large/3.jpg" data-min-width="300"></div><div data-src="images/Illustration/medium/3.jpg" data-min-width="200"></div><div data-src="images/Illustration/small/3.jpg" data-min-width="140"></div><div data-src="images/Illustration/xsmall/3.jpg"></div><noscript><img src="images/Illustration/xsmall/3.jpg" alt="img03"/></noscript></div></li>']
+
+				function fncallback() {
+
+					$( '#loadmore' ).show().on( 'click', function() {
+
+						++page;
+						var newitems = items[page-1]
+						if( page <= 1 ) {
+							
+							Gamma.add( $( newitems ) );
+
+						}
+						if( page === 1 ) {
+
+							$( this ).remove();
+
+						}
+
+					} );
+
+				}
+
+			});
+
+		</script>
+
+    </body>
+
+</html>
